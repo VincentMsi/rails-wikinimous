@@ -1,4 +1,7 @@
-<h1> <%= @articles.each do |article| %> </h1>
-<h2> <%= link_to article.title, article_path(article) %> </h2>
+<h1>Hey, you are on the hipster wiki 🦁 </h1>
+<h1> <%= link_to 'Create_new_article', articles_new_path%> </h1>
+<h1> <% @articles.each do |article| %> </h1>
+<h2> // <%= article.id %> // <%= link_to article.title, article_path(article) %> </h2>
 <% end %>
-<h5> <%= link_to 'Create_new_article', articles_new_path%> </h5>
+
+<h1>Pretty cool, huh</h1>
